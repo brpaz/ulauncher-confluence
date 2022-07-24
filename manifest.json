@@ -1,0 +1,45 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Confluence",
+  "description": "Search on your Confluence spaces and pages, directly from Ulauncher",
+  "developer_name": "Bruno Paz",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "kw",
+      "type": "keyword",
+      "name": "Confluence: All Spaces",
+      "default_value": "confluence"
+    },
+    {
+      "id": "kw_favorites",
+      "type": "keyword",
+      "name": "Confluence: Favorites Spaces",
+      "default_value": "confluence:fav"
+    },
+    {
+      "id": "server_url",
+      "type": "input",
+      "name": "JIRA Server URL",
+      "description": "The URL to your Confluence server",
+      "default_value": "https://jira.atlassian.com"
+    },
+    {
+      "id": "email",
+      "type": "input",
+      "name": "Email Address",
+      "description": "Email Address of your Confluence user",
+      "default_value": ""
+    },
+    {
+      "id": "access_token",
+      "type": "input",
+      "name": "Access Token",
+      "description": "The access token to authenticate on Jira API",
+      "default_value": ""
+    }
+  ]
+}
